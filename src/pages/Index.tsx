@@ -26,29 +26,30 @@ const Index = () => {
             className="w-full h-full object-cover ken-burns" 
             loading="eager" 
           />
-          <div className="absolute inset-0 bg-midnight/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-midnight/50 to-transparent"></div>
         </div>
 
         {/* Header Component */}
         <Header />
 
         {/* Hero Content */}
-        <div className="relative z-10 space-y-6 px-6 max-w-4xl mx-auto my-0">
-          <h2 className="tracking-[0.25em] text-sm md:text-base uppercase font-light">
-            <span className="relative">
-              OVER <span className="text-royal-blue">350</span> LOANS BROKERED
-            </span>
+        <div className="relative z-10 px-6 py-12 max-w-3xl mx-auto text-center text-white">
+          <h2 className="text-sm md:text-base tracking-widest uppercase font-light mb-6">
+            OVER{' '}
+            <span className="inline-block px-2 py-0.5 border border-green-400 text-green-400 rounded-full">
+              350
+            </span>{' '}
+            LOANS BROKERED
           </h2>
 
-          <div className="border-t border-b border-white/20 py-8 my-4">
-            <h1 className="text-5xl font-bold tracking-wider my-0 md:text-5xl">DSCR FINANCING</h1>
+          <div className="border border-white/40 rounded-md px-8 py-6 backdrop-blur-sm shadow-md">
+            <h1 className="text-4xl md:text-6xl font-light tracking-wide leading-tight mb-4">
+              DSCR <span className="font-semibold">FINANCING</span>
+            </h1>
+            <p className="text-base md:text-lg tracking-wide text-white/80">
+              UP TO 30-YEAR FIXED · SOFT CREDIT PULL · NOT ON CREDIT · LOW DOC
+            </p>
           </div>
-
-          <p className="max-w-xl mx-auto text-base tracking-wide md:text-sm my-0">
-            UP TO 30-YEAR FIXED · SOFT CREDIT PULL · NOT ON CREDIT · LOW DOC
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-4 pt-6" />
 
           {/* Featured Logos */}
           <div className="pt-16">
