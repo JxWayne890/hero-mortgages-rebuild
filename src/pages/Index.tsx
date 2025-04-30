@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Index = () => {
   const navigate = useNavigate();
@@ -46,14 +47,26 @@ const Index = () => {
             <button onClick={() => navigate('/contact')} className="btn-secondary">Contact Us</button>
           </div>
 
-          <div className="pt-10 flex flex-wrap justify-center gap-6 opacity-90">
-            {/* Featured-on logos */}
-            <div className="w-20 h-12 bg-white/80 rounded flex items-center justify-center">
-              <span className="text-xs text-gray-500 font-bold">FEATURED ON</span>
+          <div className="pt-10">
+            <p className="uppercase text-sm mb-4 tracking-wider">Featured On</p>
+            <div className="flex flex-wrap justify-center gap-6 opacity-90">
+              {/* Featured-on logos with actual names */}
+              <div className="w-32 h-12 bg-white/80 rounded flex items-center justify-center p-2">
+                <p className="text-xs font-bold text-gray-700">THE WEALTH & FREEDOM NEXUS</p>
+              </div>
+              <div className="w-32 h-12 bg-white/80 rounded flex items-center justify-center p-2">
+                <p className="text-xs font-bold text-gray-700">Lady Landlords</p>
+              </div>
+              <div className="w-20 h-12 bg-white/80 rounded flex items-center justify-center p-2">
+                <p className="text-xs font-bold text-gray-700">MPA</p>
+              </div>
+              <div className="w-32 h-12 bg-white/80 rounded flex items-center justify-center p-2">
+                <p className="text-xs font-bold text-gray-700">BiggerPockets®</p>
+              </div>
+              <div className="w-32 h-12 bg-white/80 rounded flex items-center justify-center p-2">
+                <p className="text-xs font-bold text-gray-700">The Real Estate Mindset</p>
+              </div>
             </div>
-            <div className="w-20 h-12 bg-white/80 rounded"></div>
-            <div className="w-20 h-12 bg-white/80 rounded"></div>
-            <div className="w-20 h-12 bg-white/80 rounded"></div>
           </div>
         </div>
         
@@ -69,6 +82,7 @@ const Index = () => {
           })}
         </script>
       </section>
+      <Footer />
     </div>
   );
 };
