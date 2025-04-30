@@ -25,7 +25,7 @@ const Index = () => {
         <Header />
         
         {/* Hero Content */}
-        <div className="relative z-10 space-y-6 px-6 max-w-4xl mx-auto">
+        <div className="relative z-10 space-y-6 px-6 max-w-4xl mx-auto my-0">
           <h2 className="tracking-[0.25em] text-sm md:text-base uppercase font-light">
             <span className="relative">
               OVER <span className="text-royal-blue">350</span> LOANS BROKERED
@@ -33,10 +33,10 @@ const Index = () => {
           </h2>
           
           <div className="border-t border-b border-white/20 py-8 my-4">
-            <h1 className="text-5xl md:text-7xl font-bold tracking-wider">DSCR FINANCING</h1>
+            <h1 className="text-5xl font-bold tracking-wider my-0 md:text-5xl">DSCR FINANCING</h1>
           </div>
           
-          <p className="max-w-xl mx-auto text-base md:text-lg tracking-wide">
+          <p className="max-w-xl mx-auto text-base tracking-wide md:text-sm my-0">
             UP TO 30-YEAR FIXED · SOFT CREDIT PULL · NOT ON CREDIT · LOW DOC
           </p>
 
