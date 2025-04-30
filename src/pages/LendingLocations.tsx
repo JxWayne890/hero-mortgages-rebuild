@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -11,14 +10,18 @@ const LendingLocations = () => {
         <div className="container max-w-6xl mx-auto px-4 py-16">
           <h1 className="text-4xl font-bold text-midnight mb-6 text-center">Lending Locations</h1>
           
-          <div className="max-w-3xl mx-auto my-16">
-            {/* Placeholder for US Map with highlighted states */}
-            <div className="aspect-[4/3] bg-light-grey rounded-lg flex items-center justify-center">
-              <div className="text-center p-8">
-                <p className="text-xl font-medium text-midnight mb-4">U.S. Map Coming Soon</p>
-                <p>All lending states will be highlighted in blue</p>
-              </div>
+          <div className="max-w-5xl mx-auto my-16">
+            {/* US Lending Map Image */}
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src="https://i0.wp.com/timothyhero.com/wp-content/uploads/2024/09/MapChart_Map.png?w=1286&ssl=1" 
+                alt="Lending Map - States we can and cannot lend in" 
+                className="w-full h-auto object-contain"
+              />
             </div>
+            <p className="text-center text-sm mt-4 text-midnight/80">
+              Green = Can Lend · Red = Cannot Lend
+            </p>
           </div>
         </div>
       </main>
