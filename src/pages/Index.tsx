@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
@@ -48,22 +49,58 @@ const Index = () => {
           <div className="pt-16">
             <p className="uppercase text-sm mb-4 tracking-wider">FEATURED ON</p>
             <div className="flex flex-wrap justify-center gap-6 opacity-90">
-              {/* Featured-on logos with actual names */}
-              <div className="w-32 h-12 bg-white/80 rounded flex items-center justify-center p-2">
-                <p className="text-xs font-bold text-gray-700">THE WEALTH & FREEDOM NEXUS</p>
-              </div>
-              <div className="w-32 h-12 bg-white/80 rounded flex items-center justify-center p-2">
-                <p className="text-xs font-bold text-gray-700">Lady Landlords</p>
-              </div>
-              <div className="w-20 h-12 bg-white/80 rounded flex items-center justify-center p-2">
-                <p className="text-xs font-bold text-gray-700">MPA</p>
-              </div>
-              <div className="w-32 h-12 bg-white/80 rounded flex items-center justify-center p-2">
-                <p className="text-xs font-bold text-gray-700">BiggerPockets®</p>
-              </div>
-              <div className="w-32 h-12 bg-white/80 rounded flex items-center justify-center p-2">
-                <p className="text-xs font-bold text-gray-700">The Real Estate Mindset</p>
-              </div>
+              {/* Featured-on logos with links to their websites */}
+              <a 
+                href="https://www.wealthandfreedomnexus.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/90 rounded p-3 flex items-center justify-center h-16 transition-transform hover:scale-105"
+              >
+                <img 
+                  src="https://www.wealthandfreedomnexus.com/_imagecache/Wealth%20_%20Freedom%20Nexus%20logo.png" 
+                  alt="THE WEALTH & FREEDOM NEXUS" 
+                  className="h-full object-contain"
+                />
+              </a>
+              
+              <a 
+                href="https://lady-landlords.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/90 rounded p-3 flex items-center justify-center h-16 transition-transform hover:scale-105"
+              >
+                <img 
+                  src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/20PxflUd1jJhN6BCN0Kk/media/651fd7cd3fadbf4c3e65a487.webp" 
+                  alt="Lady Landlords" 
+                  className="h-full object-contain"
+                />
+              </a>
+              
+              <a 
+                href="https://www.mpamag.com/us" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/90 rounded p-3 flex items-center justify-center h-16 transition-transform hover:scale-105"
+              >
+                <img 
+                  src="https://www.mpamag.com/images/logo_us.svg" 
+                  alt="MPA" 
+                  className="h-full object-contain"
+                />
+              </a>
+              
+              <a 
+                href="https://www.biggerpockets.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/90 rounded p-3 flex items-center justify-center h-16 transition-transform hover:scale-105"
+              >
+                <img 
+                  src="https://bpimg.biggerpockets.com/assets/logo/logo@2x-41cb3d87079ac1ef4371ac91cbb08387cebf25d485e016645a632fa3709b6935.png" 
+                  alt="BiggerPockets®" 
+                  className="h-full object-contain"
+                />
+              </a>
             </div>
           </div>
         </div>
