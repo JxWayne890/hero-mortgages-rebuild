@@ -5,12 +5,9 @@ import { Menu, X } from 'lucide-react';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   const leftLinks = [
-    { title: 'HOME', path: '/' },
     { title: 'GET A QUOTE', path: '/get-a-quote' },
     { title: 'LENDING LOCATIONS', path: '/lending-locations' },
     { title: 'FAQ', path: '/faq' },
@@ -29,9 +26,8 @@ const Header = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-midnight/70 to-transparent backdrop-blur-sm" />
       
       <div className="relative max-w-7xl mx-auto h-full flex items-center justify-between z-10">
-        
-        {/* Desktop Nav - Left Links */}
-        <nav className="hidden md:flex items-center gap-3">
+        {/* Left links for large screens */}
+        <nav className="hidden lg:flex items-center gap-3">
           {leftLinks.map((link) => (
             <NavLink
               key={link.path}
@@ -47,7 +43,7 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* Logo - Centered */}
+        {/* Center logo */}
         <div className="absolute left-1/2 transform -translate-x-1/2 h-[64px]">
           <NavLink to="/" className="block h-full">
             <img
@@ -58,8 +54,8 @@ const Header = () => {
           </NavLink>
         </div>
 
-        {/* Desktop Nav - Right Links */}
-        <nav className="hidden md:flex items-center gap-3 ml-auto">
+        {/* Right links for large screens */}
+        <nav className="hidden lg:flex items-center gap-3 ml-auto">
           {rightLinks.map((link) => (
             <NavLink
               key={link.path}
@@ -75,9 +71,9 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile & tablet menu toggle */}
         <button
-          className="md:hidden text-white ml-auto z-50"
+          className="lg:hidden text-white ml-auto z-50"
           onClick={toggleMenu}
           aria-label="Toggle menu"
           aria-expanded={isOpen}
@@ -85,9 +81,9 @@ const Header = () => {
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        {/* Mobile Navigation */}
+        {/* Fullscreen Mobile/Tablet Menu */}
         {isOpen && (
-          <div className="md:hidden fixed inset-0 top-[72px] bg-midnight/95 z-40 flex flex-col items-center pt-10">
+          <div className="lg:hidden fixed inset-0 top-[72px] bg-midnight/95 z-40 flex flex-col items-center pt-10">
             {[...leftLinks, ...rightLinks].map((link) => (
               <NavLink
                 key={link.path}
