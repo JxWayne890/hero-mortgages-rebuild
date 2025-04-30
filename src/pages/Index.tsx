@@ -28,27 +28,35 @@ const Index = () => {
             className="w-full h-full object-cover ken-burns" 
             loading="eager"
           />
-          <div className="absolute inset-0 bg-midnight/40"></div> {/* Overlay for better text visibility */}
+          <div className="absolute inset-0 bg-midnight/50"></div> {/* Darker overlay for better text visibility */}
         </div>
         
         {/* Header Component */}
         <Header />
         
         {/* Hero Content */}
-        <div className="relative z-10 space-y-4 px-6 max-w-4xl">
-          <h2 className="tracking-widest text-sm uppercase">Over 350 Loans Brokered</h2>
-          <h1 className="text-4xl md:text-6xl font-extrabold">DSCR FINANCING</h1>
-          <p className="max-w-xl mx-auto text-base md:text-lg">
-            Up to 30-Year Fixed · Soft Credit Pull · Not on Credit · Low Doc
+        <div className="relative z-10 space-y-6 px-6 max-w-4xl mx-auto">
+          <h2 className="tracking-[0.25em] text-sm md:text-base uppercase font-light">
+            <span className="relative">
+              OVER <span className="text-royal-blue">350</span> LOANS BROKERED
+            </span>
+          </h2>
+          
+          <div className="border-t border-b border-white/20 py-8 my-4">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-wider">DSCR FINANCING</h1>
+          </div>
+          
+          <p className="max-w-xl mx-auto text-base md:text-lg tracking-wide">
+            UP TO 30-YEAR FIXED · SOFT CREDIT PULL · NOT ON CREDIT · LOW DOC
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4 pt-2">
+          <div className="flex flex-wrap justify-center gap-4 pt-6">
             <button onClick={() => navigate('/get-a-quote')} className="btn-primary">Get a Quote</button>
             <button onClick={() => navigate('/contact')} className="btn-secondary">Contact Us</button>
           </div>
 
-          <div className="pt-10">
-            <p className="uppercase text-sm mb-4 tracking-wider">Featured On</p>
+          <div className="pt-16">
+            <p className="uppercase text-sm mb-4 tracking-wider">FEATURED ON</p>
             <div className="flex flex-wrap justify-center gap-6 opacity-90">
               {/* Featured-on logos with actual names */}
               <div className="w-32 h-12 bg-white/80 rounded flex items-center justify-center p-2">
