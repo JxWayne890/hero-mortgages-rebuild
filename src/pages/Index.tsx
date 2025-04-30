@@ -48,63 +48,48 @@ const Index = () => {
             UP TO 30-YEAR FIXED · SOFT CREDIT PULL · NOT ON CREDIT · LOW DOC
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4 pt-6"></div>
+          <div className="flex flex-wrap justify-center gap-4 pt-6" />
 
           {/* Featured Logos */}
           <div className="pt-16">
             <p className="uppercase text-sm mb-4 tracking-wider text-white text-center">FEATURED ON</p>
-            <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6 max-w-5xl mx-auto opacity-90">
-              <a 
-                href="https://www.wealthandfreedomnexus.com/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-2 flex items-center justify-center h-12 transition-transform hover:scale-105"
-              >
-                <img 
-                  src="https://www.wealthandfreedomnexus.com/_imagecache/Wealth%20_%20Freedom%20Nexus%20logo.png" 
-                  alt="Wealth & Freedom Nexus" 
-                  className="h-full max-h-10 w-auto object-contain"
-                />
-              </a>
+            
+            <div className="backdrop-blur-sm bg-white/10 rounded-xl px-6 py-4 shadow-lg">
+              <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 max-w-6xl mx-auto">
 
-              <a 
-                href="https://lady-landlords.com/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-2 flex items-center justify-center h-12 transition-transform hover:scale-105"
-              >
-                <img 
-                  src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/20PxflUd1jJhN6BCN0Kk/media/651fd7cd3fadbf4c3e65a487.webp" 
-                  alt="Lady Landlords" 
-                  className="h-full max-h-10 w-auto object-contain"
-                />
-              </a>
+                <a href="https://www.wealthandfreedomnexus.com/" target="_blank" rel="noopener noreferrer">
+                  <img 
+                    src="https://www.wealthandfreedomnexus.com/_imagecache/Wealth%20_%20Freedom%20Nexus%20logo.png" 
+                    alt="Wealth & Freedom Nexus" 
+                    className="h-full max-h-10 w-auto max-w-[140px] object-contain hover:opacity-90 transition duration-150"
+                  />
+                </a>
 
-              <a 
-                href="https://www.mpamag.com/us" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-2 flex items-center justify-center h-12 transition-transform hover:scale-105"
-              >
-                <img 
-                  src="https://www.mpamag.com/images/logo_us.svg" 
-                  alt="MPA" 
-                  className="h-full max-h-10 w-auto object-contain"
-                />
-              </a>
+                <a href="https://lady-landlords.com/" target="_blank" rel="noopener noreferrer">
+                  <img 
+                    src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/20PxflUd1jJhN6BCN0Kk/media/651fd7cd3fadbf4c3e65a487.webp" 
+                    alt="Lady Landlords" 
+                    className="h-full max-h-10 w-auto max-w-[140px] object-contain hover:opacity-90 transition duration-150"
+                  />
+                </a>
 
-              <a 
-                href="https://www.biggerpockets.com/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-2 flex items-center justify-center h-12 transition-transform hover:scale-105"
-              >
-                <img 
-                  src="https://bpimg.biggerpockets.com/assets/logo/logo@2x-41cb3d87079ac1ef4371ac91cbb08387cebf25d485e016645a632fa3709b6935.png" 
-                  alt="BiggerPockets" 
-                  className="h-full max-h-10 w-auto object-contain"
-                />
-              </a>
+                <a href="https://www.mpamag.com/us" target="_blank" rel="noopener noreferrer">
+                  <img 
+                    src="https://www.mpamag.com/images/logo_us.svg" 
+                    alt="MPA" 
+                    className="h-full max-h-10 w-auto max-w-[140px] object-contain hover:opacity-90 transition duration-150"
+                  />
+                </a>
+
+                <a href="https://www.biggerpockets.com/" target="_blank" rel="noopener noreferrer">
+                  <img 
+                    src="https://bpimg.biggerpockets.com/assets/logo/logo@2x-41cb3d87079ac1ef4371ac91cbb08387cebf25d485e016645a632fa3709b6935.png" 
+                    alt="BiggerPockets" 
+                    className="h-full max-h-10 w-auto max-w-[140px] object-contain hover:opacity-90 transition duration-150"
+                  />
+                </a>
+
+              </div>
             </div>
           </div>
         </div>
